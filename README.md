@@ -1,0 +1,1 @@
+# everything-wrong-with-firestore
