@@ -2,7 +2,7 @@
 
 > nuances, missing features, strange API, things to watchout, and wishlist
 
-- `2025-08-28` Firestore cannot Set() field by JSON path (e.g. `product.gtin` will be stored as a field `product.gtin` in root, instead a property `gtin` in object at field `product`)
+- `2025-08-28` Firestore cannot Set() field by JSON path (e.g. `"product.gtin": ...` will be stored as a field `product.gtin` in root, instead do `"product": map[string]any{"gtin": ...}`)
 - `2025-08-26` Firestore cannot Update() field by JSON path with array in it (e.g. `$.receipt.products[0].category` is not possible to udpate)
 - `2025-08-12` Firestore iterator has no backoff mechanism
 - `2025-08-12` Firestore iterator may return `Unavailable` gRPC status, yet never terminate
