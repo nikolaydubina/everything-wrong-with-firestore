@@ -9,8 +9,8 @@
 - Firestore cannot Update() field multiple times in the same operation (e.g. cannot ArrayRemove and ArrayUnion in the same operation)
 - Firestore [does not support](https://cloud.google.com/go/docs/reference/cloud.google.com/go/firestore/latest#cloud_google_com_go_firestore_DocumentRef_Create) `uint64`
 - Firestore struct tags encoding do not work with custom types, it requires marshalling to JSON and unmarshalling to `map[string]any`
+- Firestore cannot Update() n-th element in array in field (e.g. `$.receipt.products[0].category` is not possible to udpate)
 
 ## JSON Path
 - Firestore cannot Set() field by JSON path (e.g. `"product.gtin": ...` will be stored as a field `product.gtin` in root, instead do `"product": map[string]any{"gtin": ...}`)
 - Firestore cannot Update() field by JSON path, it has to be through Set() with MergeAll
-- Firestore cannot Update() field by JSON path with array in it (e.g. `$.receipt.products[0].category` is not possible to udpate)
