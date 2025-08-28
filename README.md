@@ -10,5 +10,5 @@
 - `2025-05-03` Firestore Update() silently fails when some fields are not mutated (e.g. JSON path mistake)
 - `2025-05-03` Firestore cannot Update() field by JSON path, it has to be through Set() with MergeAll
 - `2025-04-21` Firestore cannot Update() field multiple times in the same operation (e.g. cannot ArrayRemove and ArrayUnion in the same operation)
-- `2025-01-15` Firestore does not support uint64 [doc](https://cloud.google.com/go/docs/reference/cloud.google.com/go/firestore/latest)
+- `2025-01-15` Firestore does not support `uint64` [doc](https://cloud.google.com/go/docs/reference/cloud.google.com/go/firestore/latest)
 - `2024-11-08` Firestore struct tags encoding do not work with custom types, it requires marshalling to JSON and unmarshalling to `map[string]any`
