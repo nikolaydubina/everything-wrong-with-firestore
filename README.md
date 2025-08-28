@@ -12,5 +12,5 @@
 
 ## JSON Path
 - Firestore cannot Set() field by JSON path (e.g. `"product.gtin": ...` will be stored as a field `product.gtin` in root, instead do `"product": map[string]any{"gtin": ...}`)
-- Firestore cannot Update() field by JSON path, it has to be through Set() with MergeAllFirestore cannot Update() field by JSON path, it has to be through Set() with MergeAll
+- Firestore cannot Update() field by JSON path, it has to be through Set() with MergeAll
 - Firestore cannot Update() field by JSON path with array in it (e.g. `$.receipt.products[0].category` is not possible to udpate)
