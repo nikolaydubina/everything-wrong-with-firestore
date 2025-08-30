@@ -8,7 +8,7 @@
 - Firestore Update() silently fails when some fields are not mutated (e.g. JSON path mistake)
 - Firestore cannot Update() field multiple times in the same operation (e.g. cannot ArrayRemove and ArrayUnion in the same operation)
 - Firestore [does not support](https://cloud.google.com/go/docs/reference/cloud.google.com/go/firestore/latest#cloud_google_com_go_firestore_DocumentRef_Create) `uint64`
-- Firestore struct tags encoding do not work with custom types, it requires marshalling to JSON and unmarshalling to `map[string]any`
+- Firestore struct tags encoding do not work with custom types, it requires marshalling to JSON and unmarshalling to `map[string]any` before writing to Firestore
 - Firestore cannot Update() n-th element in array in field (e.g. `$.receipt.products[0].category` is not possible to udpate)
 
 ## JSON Path
