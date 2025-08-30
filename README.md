@@ -4,7 +4,7 @@
 
 ## Types
 
-- Firestore struct tags encoding do not work with custom types, it requires marshalling to JSON and unmarshalling to `map[string]any` before writing to Firestore
+- Firestore does not work with custom types, it requires marshalling to JSON and unmarshalling to `map[string]any` before writing to Firestore
 - Firestore [does not support](https://cloud.google.com/go/docs/reference/cloud.google.com/go/firestore/latest#cloud_google_com_go_firestore_DocumentRef_Create) `uint64`
 
 ## Iterator
