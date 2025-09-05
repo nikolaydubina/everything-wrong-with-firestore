@@ -1,6 +1,6 @@
 # Everything Wrong with Firestore
 
-> nuances, missing features, strange API, things to watchout, and wishlist
+_nuances, missing features, strange API, things to watchout, and wishlist_
 
 ## Types
 
