@@ -25,3 +25,8 @@ _nuances, missing features, strange API, things to watchout, and wishlist_
 
 - Firestore cannot Set() field by JSON path (e.g. `"product.gtin": ...` will be stored as a field `product.gtin` in root, instead do `"product": map[string]any{"gtin": ...}`)
 - Firestore cannot Update() field by JSON path, it has to be through Set() with MergeAll
+
+## Monitoring
+
+- Firestore sets trace span names with id in them, resulting in polluting traces with garbage and high cardinality and cost. you would get something like `/my_collection/_doc/asdf1234` traces of kind `client`
+
