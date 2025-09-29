@@ -28,5 +28,5 @@ _nuances, missing features, strange API, things to watchout, and wishlist_
 
 ## Monitoring
 
-- Firestore sets trace span names with id in them, resulting in polluting traces with garbage and high cardinality and cost. you would get something like `/my_collection/_doc/asdf1234` traces of kind `client`
+- Firestore sets trace span names with id in them, resulting in polluting traces with garbage and high cardinality and cost. you would get something like `/my_collection/_doc/asdf1234` traces of kind `client`. https://github.com/googleapis/google-cloud-go/issues/12973
 
