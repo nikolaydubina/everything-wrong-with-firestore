@@ -5,7 +5,7 @@ _nuances, missing features, strange API, things to watchout, and wishlist_
 ## Types
 
 - Firestore does not work with custom types, it requires marshalling to JSON and unmarshalling to `map[string]any` before writing to Firestore
-- Firestore [does not support](https://cloud.google.com/go/docs/reference/cloud.google.com/go/firestore/latest#cloud_google_com_go_firestore_DocumentRef_Create) `uint64`
+- Firestore [does not support](https://pkg.go.dev/cloud.google.com/go/firestore#DocumentRef.Create) `uint64`
 - Firestore needs manual setting into `map[string]any` `time.Time` values after decoding before write to Firestore so that Firestore recognizes `time.Time` type
 
 ## Iterator
