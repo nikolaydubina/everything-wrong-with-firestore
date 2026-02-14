@@ -14,6 +14,7 @@ _nuances, missing features, strange API, things to watchout, and wishlist_
 - Firestore iterator has no backoff mechanism
 - Firestore iterator may return `Unavailable` gRPC status, yet never terminate
 - Firestore iterator may never terminate
+- Firestore iterator cannot iterate over whole collection, it requires reading docs in batches (index, and order_by does not help)
 
 ## Update()
 
