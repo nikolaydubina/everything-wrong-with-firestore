@@ -19,7 +19,7 @@ _nuances, missing features, strange API, things to watchout, and wishlist_
 ## Update()
 
 - Firestore Update() silently fails when some fields are not mutated (e.g. JSON path mistake)
-- Firestore cannot ovewrite field of array type with Update()
+- Firestore Update() cannot ovewrite field of array type
 - Firestore cannot Update() field multiple times in the same operation (e.g. cannot ArrayRemove and ArrayUnion in the same operation)
 - Firestore cannot Update() n-th element in array in field (e.g. `$.receipt.products[0].category` is not possible to udpate)
 
