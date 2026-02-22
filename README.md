@@ -18,15 +18,15 @@ _nuances, missing features, strange API, things to watchout, and wishlist_
 
 ## Update()
 
-- Firestore Update() silently fails when some fields are not mutated (e.g. JSON path mistake)
-- Firestore Update() cannot ovewrite field of array type
-- Firestore cannot Update() field multiple times in the same operation (e.g. cannot ArrayRemove and ArrayUnion in the same operation)
-- Firestore cannot Update() n-th element in array in field (e.g. `$.receipt.products[0].category` is not possible to udpate)
+- Firestore `Update()` silently fails when some fields are not mutated (e.g. JSON path mistake)
+- Firestore `Update()` cannot ovewrite field of array type
+- Firestore cannot `Update()` field multiple times in the same operation (e.g. cannot ArrayRemove and ArrayUnion in the same operation)
+- Firestore cannot `Update()` n-th element in array in field (e.g. `$.receipt.products[0].category` is not possible to udpate)
 
 ## JSON Path
 
-- Firestore cannot Set() field by JSON path (e.g. `"product.gtin": ...` will be stored as a field `product.gtin` in root, instead do `"product": map[string]any{"gtin": ...}`)
-- Firestore cannot Update() field by JSON path, it has to be through Set() with MergeAll
+- Firestore cannot `Set()` field by JSON path (e.g. `"product.gtin": ...` will be stored as a field `product.gtin` in root, instead do `"product": map[string]any{"gtin": ...}`)
+- Firestore cannot `Update()` field by JSON path, it has to be through Set() with MergeAll
 
 ## Monitoring
 
