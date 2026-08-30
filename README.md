@@ -2,6 +2,10 @@
 
 _nuances, missing features, strange API, things to watchout, and wishlist_
 
+## Increment
+
+- Firestore `Increment()` silently ignored in `Set()` without `MergeAll` (full replacement behavior does not honour `Increment()` command when object and field already exists)
+
 ## Types
 
 - Firestore does not work with custom types, it requires marshalling to JSON and unmarshalling to `map[string]any` before writing to Firestore
