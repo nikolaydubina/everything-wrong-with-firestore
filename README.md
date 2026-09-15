@@ -4,7 +4,7 @@ _nuances, missing features, strange API, things to watchout, and wishlist_
 
 ## Primary Key
 
-- Firestore document id is a string. Maning String() or text API representation of your IDs will be hardcoded and cannot be used as binary (unless base64 hop from binary, which adds separate text representation of your ID).
+- Firestore document id is a string. Meaning, String() or text API representation of your IDs will be hardcoded and cannot be used as binary (unless base64 hop from binary, which adds separate text representation of your ID).
 
 ## Increment
 
