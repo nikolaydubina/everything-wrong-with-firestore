@@ -2,6 +2,10 @@
 
 _nuances, missing features, strange API, things to watchout, and wishlist_
 
+## Primary Key
+
+- Firestore document id is a string. Maning String() or text API representation of your IDs will be hardcoded and cannot be used as binary (unless base64 hop from binary, which adds separate text representation of your ID).
+
 ## Increment
 
 - Firestore `Increment()` silently ignored in `Set()` without `MergeAll` (full replacement behavior does not honour `Increment()` command when object and field already exists)
