@@ -38,6 +38,6 @@ _nuances, missing features, strange API, things to watchout, and wishlist_
 
 ## Monitoring
 
-- Firestore `option.WithTelemetryDisabled()` does not disable telemetry. [bug](https://github.com/googleapis/google-cloud-go/issues/13095) is reported and not fixed for 5+ months. as of 2026-02-22 still not fixed.
+- Firestore `option.WithTelemetryDisabled()` does not disable telemetry. [bug](https://github.com/googleapis/google-cloud-go/issues/13095) is reported and not fixed for 1y+. as of 2026-09-15 still not fixed.
 - Firestore sets trace span names with id in them, resulting in polluting traces with garbage and high cardinality and cost. you would get something like `/my_collection/_doc/asdf1234` traces of kind `client`. [bug](https://github.com/googleapis/google-cloud-go/issues/12973) is reported and not fixed for 6+ months. as of 2026-02-22 still not fixed. 
 
