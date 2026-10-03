@@ -16,6 +16,7 @@ _nuances, missing features, strange API, things to watchout, and wishlist_
 - Firestore [does not support](https://cloud.google.com/go/docs/reference/cloud.google.com/go/firestore/latest#cloud_google_com_go_firestore_DocumentRef_Create) `uint64`
 - Firestore needs manual setting into `map[string]any` `time.Time` values after decoding before write to Firestore so that Firestore recognizes `time.Time` type
 - `firestore.Increment(1)` on new field will have `float64` type, not `int64`
+- `firestore.Increment` will be accepted at compile time, and will error out only at runtime when trying to run it with dump of type 
 
 ## Iterator
 
